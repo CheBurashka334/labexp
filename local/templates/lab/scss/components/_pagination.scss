@@ -1,0 +1,25 @@
+// pagination
+.pagination {
+	margin: 3*$gutter auto;
+	.page-list {
+		@extend ul.nostyle;
+		text-align: center;
+	}
+	.page-item {
+		display: inline-block;
+		margin: 0 3px;
+	}
+	.page-link {
+		display: block;
+		width: 26px;
+		height: 30px;
+		line-height: 30px;
+		vertical-align: middle;
+		background: $primary-color-lighten;
+		color: #fff;
+		&.active,
+		&:hover {
+			background: $primary-color;
+		}
+	}
+}

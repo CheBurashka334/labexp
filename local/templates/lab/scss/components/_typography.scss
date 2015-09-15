@@ -1,0 +1,146 @@
+a {
+	word-wrap: break-word;
+}
+
+html{
+	line-height: 1.5;
+	font-size: 16px;
+	font-family: roboto, arial, sans-serif;
+	font-weight: 300;
+	color: $base-text-color;
+}
+
+// Text Styles
+em { font-style: italic; }
+strong { font-weight: bolder; }
+b {
+	font-weight: bold;
+}
+small { font-size: 14px; }
+p {
+	margin: 1.5em 0;
+}
+.light { font-weight: 300; }
+.thin { font-weight: 100; }
+.x-small {
+	font-size: 12px;
+}
+.small {
+	font-size: 14px;
+}
+.big {
+	font-size: 18px;
+	line-height: 20px;
+}
+.x-big, h3 {
+	font-size: 20px;
+}
+.xx-big {
+	font-size: 24px;
+}
+.large, h2 {
+	font-size: 34px;
+}
+.x-large, h1 {
+	font-size: 45px;
+	margin: 30px 0;
+}
+.light-text {
+	color: $light-text-color;
+}
+.dark-text {
+	color: $dark-text-color;
+}
+h1, h2, h3,
+[class*="title"] {
+	@extend .dark-text;
+	text-transform: uppercase;
+}
+h1, h2, h3 {
+	margin: 80px 0 30px;
+}
+.rouble {
+	font-family: rouble;
+}
+
+ol:not(.nostyle){
+	margin: $gutter 0 2*$gutter;
+	padding: 0;
+	list-style: none;
+	counter-reset: item;
+	li {
+		margin: $gutter 0;
+		padding: 0;
+		&:before {
+			display: inline;
+			counter-increment: item;
+			content: counter(item)'. ';
+		}
+	}
+	&.links-list {
+		color: $link-color;
+	}
+}
+ul:not(.nostyle){
+	margin: 30px 0 55px;
+	padding: 0;
+	li {
+		margin: 15px 0;
+		padding: 0 0 0 20px;
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 7px;
+			left: 0;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background: $primary-color-lighten;
+		}
+	}
+}
+
+table {
+	width: 100%;
+	margin: 70px 0;
+	border-collapse: separate;
+	border-spacing: 1px;
+	td, th {
+		padding: 30px;
+		text-align: center;
+		vertical-align: middle;
+		font-weight: 300;
+	}
+	tr:nth-child(even) td {
+		background: #f5f5f5;
+	}
+	tr:nth-child(odd) td {
+		background: #ededed;
+	}
+	tr:first-child th {
+		background: $primary-color;
+		color: #fff;
+	}
+	tr th:first-child,
+	tr td:first-child {
+		text-align: left;
+		min-width: 38%;
+	}
+}
+
+.highlight {
+	background: #f9f9f9;
+}
+.highlight-box {
+	background: #f4f4f4;
+	padding: 50px 0;
+	margin-top: 45px;
+	margin-bottom: 45px;
+}
+
+.bgimg-box {
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 60px 0 40px;
+}

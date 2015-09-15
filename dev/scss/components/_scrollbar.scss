@@ -1,0 +1,44 @@
+// scrollbar 
+.scroll-box {
+	position: static;
+	width: 100%;
+}
+.scroll-wrapper {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	&.workarea-wrapper {
+		top: 95px;
+		bottom: 94px;
+	}
+	& > div:first-of-type {
+		position: static;
+		width: 100%;
+		padding-top: 1px;
+		padding-bottom: 1px;
+	}
+}
+.iScrollVerticalScrollbar {
+	position: absolute;
+	z-index: 100;
+	width: 8px;
+	bottom: 7px;
+	top: 2px;
+	right: 1px;
+	.iScrollIndicator {
+		position: absolute;
+		z-index: 100;
+		width: 100%;
+		background: rgba(0,0,0,.5);
+		border-radius: 2px;
+	}
+}
+.page-aside .iScrollVerticalScrollbar {
+	z-index: 9999;
+	.iScrollIndicator {
+		z-index: 9999;
+	}
+}

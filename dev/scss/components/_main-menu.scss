@@ -1,0 +1,20 @@
+// main-menu
+.main-menu {
+	@extend ul.nostyle;
+	.menu-item {
+		display: inline-block;
+		margin: 0 7px;
+	}
+	.menu-link {
+		@extend a.nostyle;
+		@extend small;
+		display: block;
+		line-height: 30px;
+		vertical-align: middle;
+		text-transform: uppercase;
+		border-bottom: 3px solid transparent;
+		&.active {
+			border-color: $primary-color;
+		}
+	}
+}

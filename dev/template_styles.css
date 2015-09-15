@@ -1,0 +1,2515 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, scss/components/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, scss/components/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, scss/components/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+  position: relative;
+}
+
+/* line 50, scss/components/_normalize.scss */
+div, ul, ol, li {
+  position: relative;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 59, scss/components/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+  position: relative;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 73, scss/components/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 83, scss/components/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 95, scss/components/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 103, scss/components/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 115, scss/components/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 123, scss/components/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 132, scss/components/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 141, scss/components/_normalize.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 151, scss/components/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 160, scss/components/_normalize.scss */
+small, .dropdown-value, .dropdown-list .dropdown-item, .main-menu .menu-link, .footer .copy {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 168, scss/components/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 176, scss/components/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 180, scss/components/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 191, scss/components/_normalize.scss */
+img {
+  border: 0;
+  max-width: 100%;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 200, scss/components/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 211, scss/components/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 219, scss/components/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 229, scss/components/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 237, scss/components/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 260, scss/components/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0
+  /* 3 */
+}
+
+/* line 269, scss/components/_normalize.scss */
+select,
+button,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: none;
+  border: none;
+}
+/* line 276, scss/components/_normalize.scss */
+select:focus,
+button:focus,
+input[type="submit"]:focus {
+  outline: none;
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 285, scss/components/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 296, scss/components/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* 1 */
+/* line 309, scss/components/_normalize.scss */
+html input[type="button"],
+button,
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 321, scss/components/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 330, scss/components/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 341, scss/components/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 353, scss/components/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 365, scss/components/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 376, scss/components/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 389, scss/components/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 398, scss/components/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 409, scss/components/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 418, scss/components/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 427, scss/components/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 438, scss/components/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 443, scss/components/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* line 6, scss/components/_global.scss */
+html {
+  box-sizing: border-box;
+  color: #515151;
+  height: 100%;
+}
+
+/* line 11, scss/components/_global.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 15, scss/components/_global.scss */
+body {
+  width: 100%;
+  height: 100%;
+  min-width: 1000px;
+  overflow-y: hidden;
+}
+
+/* line 21, scss/components/_global.scss */
+.layout {
+  min-height: 100%;
+  min-width: 1024px;
+  background: #fcfbfc;
+}
+
+/* line 27, scss/components/_global.scss */
+ul {
+  list-style-type: none;
+}
+
+/* line 31, scss/components/_global.scss */
+a {
+  color: #855992;
+  -webkit-tap-highlight-color: transparent;
+}
+/* line 34, scss/components/_global.scss */
+a:hover {
+  color: #c7213a;
+}
+/* line 37, scss/components/_global.scss */
+a.nostyle, .main-menu .menu-link, .news-item .item-link, a.nostyle:hover, .main-menu .menu-link:hover, .news-item .item-link:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 45, scss/components/_global.scss */
+.title-link {
+  color: inherit;
+}
+/* line 47, scss/components/_global.scss */
+.title-link:hover {
+  color: #855992;
+}
+
+/* line 51, scss/components/_global.scss */
+.img-link {
+  display: block;
+  height: 100%;
+}
+/* line 54, scss/components/_global.scss */
+.img-link:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: transparent;
+  -webkit-transition: background .2s;
+          transition: background .2s;
+}
+/* line 66, scss/components/_global.scss */
+.img-link:hover:after {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* line 70, scss/components/_global.scss */
+a.file {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+  min-height: 50px;
+  padding-left: 45px;
+  line-height: 25px;
+  margin-bottom: 20px;
+  color: #515151;
+}
+/* line 81, scss/components/_global.scss */
+a.file[href$=".doc"], a.file[href$=".docx"] {
+  background: url("images/doc.svg") top 5px left no-repeat;
+}
+/* line 85, scss/components/_global.scss */
+a.file[href$=".pdf"] {
+  background: url("images/pdf.svg") top 5px left no-repeat;
+}
+/* line 88, scss/components/_global.scss */
+a.file[href$=".xls"], a.file[href$=".xlsx"] {
+  background: url("images/xls.svg") top 5px left no-repeat;
+}
+/* line 92, scss/components/_global.scss */
+a.file[href$=".ppt"], a.file[href$=".pptx"] {
+  background: url("images/ppt.svg") top 5px left no-repeat;
+}
+
+/* line 100, scss/components/_global.scss */
+.clearfix {
+  clear: both;
+}
+/* line 102, scss/components/_global.scss */
+.clearfix:before, .clearfix:after, .carousel .carousel-inner:after {
+  content: '';
+  display: block;
+  clear: both;
+  float: none;
+}
+
+/* line 112, scss/components/_global.scss */
+.loader,
+.btn.loader {
+  margin: 60px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 0.5em solid rgba(199, 33, 58, 0.2);
+  border-right: 0.5em solid rgba(199, 33, 58, 0.2);
+  border-bottom: 0.5em solid rgba(199, 33, 58, 0.2);
+  border-left: 0.5em solid #c7213a;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+
+/* line 128, scss/components/_global.scss */
+.btn.loader {
+  -webkit-transition: all .3s;
+          transition: all .3s;
+}
+
+/* line 131, scss/components/_global.scss */
+.loader,
+.btn.loader,
+.loader:after,
+.btn.loader:after {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/* line 162, scss/components/_global.scss */
+.divider {
+  height: 1px;
+  overflow: hidden;
+  background-color: #ececec;
+  margin: 30px auto;
+}
+
+/* line 172, scss/components/_global.scss */
+blockquote {
+  margin: 20px 0;
+  padding-left: 1.5rem;
+  border-left: 5px solid #855992;
+}
+
+/* line 179, scss/components/_global.scss */
+p img {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+/* line 184, scss/components/_global.scss */
+img.responsive-img,
+video.responsive-video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 189, scss/components/_global.scss */
+.video-box {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+/* line 195, scss/components/_global.scss */
+.video-box iframe,
+.video-box object,
+.video-box embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 207, scss/components/_global.scss */
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+}
+
+/* line 213, scss/components/_global.scss */
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+/* line 221, scss/components/_global.scss */
+.parallax img {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+/* line 235, scss/components/_global.scss */
+.pin-top, .pin-bottom {
+  position: relative;
+}
+
+/* line 238, scss/components/_global.scss */
+.pinned {
+  position: fixed !important;
+}
+
+/*********************
+  Transition Classes
+**********************/
+/* line 246, scss/components/_global.scss */
+ul.staggered-list li {
+  opacity: 0;
+}
+
+/* line 250, scss/components/_global.scss */
+.fade-in {
+  opacity: 0;
+  -webkit-transform-origin: 0 50%;
+      -ms-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+}
+
+/* line 257, scss/components/_global.scss */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+/* line 263, scss/components/_global.scss */
+.video-container.no-controls {
+  padding-top: 0;
+}
+/* line 267, scss/components/_global.scss */
+.video-container iframe, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*******************
+  Utility Classes
+*******************/
+/* line 281, scss/components/_global.scss */
+.hide {
+  display: none !important;
+}
+
+/* line 286, scss/components/_global.scss */
+.left-align {
+  text-align: left;
+}
+
+/* line 289, scss/components/_global.scss */
+.right-align {
+  text-align: right;
+}
+
+/* line 292, scss/components/_global.scss */
+.center, .center-align {
+  text-align: center;
+}
+
+/* line 296, scss/components/_global.scss */
+.left, .carousel .item {
+  float: left !important;
+}
+
+/* line 299, scss/components/_global.scss */
+.right {
+  float: right !important;
+}
+
+/* line 304, scss/components/_global.scss */
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 313, scss/components/_global.scss */
+.circle, .carousel .carousel-pagination .nav-item, .carousel .carousel-pagination .nav-link {
+  border-radius: 50%;
+}
+
+/* line 317, scss/components/_global.scss */
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 323, scss/components/_global.scss */
+.truncate {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 330, scss/components/_global.scss */
+.no-padding {
+  padding: 0 !important;
+}
+
+/* line 334, scss/components/_global.scss */
+.triangle {
+  position: absolute;
+  width: 30px;
+  height: 2.5em;
+  background: #fff;
+  font-size: 15px;
+  top: 0;
+  right: 0;
+}
+/* line 342, scss/components/_global.scss */
+.triangle:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid #434343;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+/* line 2, scss/components/_buttons.scss */
+.btn,
+input.btn,
+button.btn {
+  display: inline-block;
+  min-width: 160px;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 58px;
+  height: 58px;
+  outline: 0;
+  vertical-align: middle;
+  border: 1px solid #855992;
+  text-decoration: none;
+  color: #f9f9f9;
+  background-color: #855992;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  -webkit-transition: all .3s;
+          transition: all .3s;
+  margin: 20px;
+  margin-left: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+/* line 27, scss/components/_buttons.scss */
+.btn:hover,
+input.btn:hover,
+button.btn:hover {
+  background: #a46db5;
+  border-color: #a46db5;
+  color: #f9f9f9;
+  -webkit-transition: all .3s;
+          transition: all .3s;
+}
+/* line 35, scss/components/_buttons.scss */
+.btn.transparent,
+input.btn.transparent,
+button.btn.transparent {
+  background: transparent;
+  border-color: #fff;
+}
+/* line 38, scss/components/_buttons.scss */
+.btn.transparent:hover,
+input.btn.transparent:hover,
+button.btn.transparent:hover {
+  background: #fff;
+  color: #434a5b;
+}
+/* line 43, scss/components/_buttons.scss */
+.btn .center,
+input.btn .center,
+button.btn .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 49, scss/components/_buttons.scss */
+.btn-close {
+  width: 30px;
+  height: 30px;
+  -webkit-transition: -webkit-transform .3s ease;
+          transition: transform .3s ease;
+}
+/* line 53, scss/components/_buttons.scss */
+.btn-close .icon {
+  fill: #855992;
+}
+/* line 56, scss/components/_buttons.scss */
+.btn-close:hover {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+/* line 2, scss/components/_icons.scss */
+.icon {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 1, scss/components/_grid.scss */
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  position: static;
+}
+
+/* line 7, scss/components/_grid.scss */
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1660px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+/* line 14, scss/components/_grid.scss */
+.container.container-small {
+  max-width: 1050px;
+}
+
+/*********************
+  Media Query Classes
+**********************/
+@media only screen and (max-width: 600px) {
+  /* line 22, scss/components/_grid.scss */
+  .hide-on-small-only, .hide-on-small-and-down {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 27, scss/components/_grid.scss */
+  .hide-on-med-and-down {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  /* line 32, scss/components/_grid.scss */
+  .hide-on-med-and-up {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  /* line 37, scss/components/_grid.scss */
+  .hide-on-med-only {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  /* line 42, scss/components/_grid.scss */
+  .hide-on-large-only {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  /* line 47, scss/components/_grid.scss */
+  .show-on-large {
+    display: initial !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  /* line 52, scss/components/_grid.scss */
+  .show-on-medium {
+    display: initial !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* line 57, scss/components/_grid.scss */
+  .show-on-small {
+    display: initial !important;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  /* line 62, scss/components/_grid.scss */
+  .show-on-medium-and-up {
+    display: initial !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 67, scss/components/_grid.scss */
+  .show-on-medium-and-down {
+    display: initial !important;
+  }
+}
+
+/* line 72, scss/components/_grid.scss */
+.full-width {
+  width: 100vw;
+  margin-left: calc(-1*(100vw - 100%)/2);
+}
+
+@media only screen and (max-width: 600px) {
+  /* line 77, scss/components/_grid.scss */
+  .s-full-width {
+    width: 100vw;
+    margin-left: calc(-1*(100vw - 100%)/2);
+  }
+  /* line 81, scss/components/_grid.scss */
+  .s-full-width .col {
+    padding-left: 20px;
+    padding-right: 20px;
+    float: none;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  /* line 89, scss/components/_grid.scss */
+  .m-full-width {
+    width: 100vw;
+    margin-left: calc(-1*(100vw - 100%)/2);
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  /* line 95, scss/components/_grid.scss */
+  .l-full-width {
+    width: 100vw;
+    margin-left: calc(-1*(100vw - 100%)/2);
+  }
+}
+
+/* line 1, scss/components/_typography.scss */
+a {
+  word-wrap: break-word;
+}
+
+/* line 5, scss/components/_typography.scss */
+html {
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: roboto, arial, sans-serif;
+  font-weight: 300;
+  color: #515151;
+}
+
+/* line 14, scss/components/_typography.scss */
+em {
+  font-style: italic;
+}
+
+/* line 15, scss/components/_typography.scss */
+strong {
+  font-weight: bolder;
+}
+
+/* line 16, scss/components/_typography.scss */
+b {
+  font-weight: bold;
+}
+
+/* line 19, scss/components/_typography.scss */
+small, .dropdown-value, .dropdown-list .dropdown-item, .main-menu .menu-link, .footer .copy {
+  font-size: 14px;
+}
+
+/* line 20, scss/components/_typography.scss */
+p {
+  margin: 1.5em 0;
+}
+
+/* line 23, scss/components/_typography.scss */
+.light, .home-slider .item-text, .footer, .links-box.colored .item-link {
+  font-weight: 300;
+}
+
+/* line 24, scss/components/_typography.scss */
+.thin, .home-slider .item-title, .card .item-title, .accordeon .accordeon-header, .courses-box .item-text, .courses-box .item-title {
+  font-weight: 100;
+}
+
+/* line 25, scss/components/_typography.scss */
+.x-small {
+  font-size: 12px;
+}
+
+/* line 28, scss/components/_typography.scss */
+.small {
+  font-size: 14px;
+}
+
+/* line 31, scss/components/_typography.scss */
+.big, .bx-auth-services a, .header .phone-box, .courses-box .item-text {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+/* line 35, scss/components/_typography.scss */
+.x-big, .card .item-title, .accordeon .accordeon-header, h3 {
+  font-size: 20px;
+}
+
+/* line 38, scss/components/_typography.scss */
+.xx-big, .courses-box .item-title {
+  font-size: 24px;
+}
+
+/* line 41, scss/components/_typography.scss */
+.large, h2 {
+  font-size: 34px;
+}
+
+/* line 44, scss/components/_typography.scss */
+.x-large, h1 {
+  font-size: 45px;
+  margin: 30px 0;
+}
+
+/* line 48, scss/components/_typography.scss */
+.light-text {
+  color: #5d5d5d;
+}
+
+/* line 51, scss/components/_typography.scss */
+.dark-text, h1, h2, h3,
+[class*="title"] {
+  color: #2d2d2d;
+}
+
+/* line 54, scss/components/_typography.scss */
+h1, h2, h3,
+[class*="title"] {
+  text-transform: uppercase;
+}
+
+/* line 59, scss/components/_typography.scss */
+h1, h2, h3 {
+  margin: 80px 0 30px;
+}
+
+/* line 62, scss/components/_typography.scss */
+.rouble {
+  font-family: rouble;
+}
+
+/* line 66, scss/components/_typography.scss */
+ol:not(.nostyle) {
+  margin: 10px 0 20px;
+  padding: 0;
+  list-style: none;
+  counter-reset: item;
+}
+/* line 71, scss/components/_typography.scss */
+ol:not(.nostyle) li {
+  margin: 10px 0;
+  padding: 0;
+}
+/* line 74, scss/components/_typography.scss */
+ol:not(.nostyle) li:before {
+  display: inline;
+  counter-increment: item;
+  content: counter(item) ". ";
+}
+/* line 80, scss/components/_typography.scss */
+ol:not(.nostyle).links-list {
+  color: #855992;
+}
+
+/* line 84, scss/components/_typography.scss */
+ul {
+  margin: 30px 0 55px;
+  padding: 0;
+}
+/* line 87, scss/components/_typography.scss */
+ul li {
+  margin: 15px 0;
+  padding: 0 0 0 20px;
+}
+/* line 90, scss/components/_typography.scss */
+ul li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #a46db5;
+}
+
+/* line 104, scss/components/_typography.scss */
+ul.nostyle, .carousel .carousel-pagination, .dropdown-list, .pagination .page-list, .bx-auth-services, .main-menu,
+ol.nostyle {
+  padding: 0;
+  margin: 0;
+}
+/* line 108, scss/components/_typography.scss */
+ul.nostyle li, .carousel .carousel-pagination li, .dropdown-list li, .pagination .page-list li, .bx-auth-services li, .main-menu li,
+ol.nostyle li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 113, scss/components/_typography.scss */
+ul.nostyle li:before, .carousel .carousel-pagination li:before, .dropdown-list li:before, .pagination .page-list li:before, .bx-auth-services li:before, .main-menu li:before,
+ol.nostyle li:before {
+  display: none;
+}
+
+/* line 117, scss/components/_typography.scss */
+li.nostyle {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 121, scss/components/_typography.scss */
+li.nostyle:before, .dropdown-list .dropdown-item:before {
+  display: none;
+}
+
+/* line 127, scss/components/_typography.scss */
+table {
+  width: 100%;
+  margin: 70px 0;
+  border-collapse: separate;
+  border-spacing: 1px;
+}
+/* line 132, scss/components/_typography.scss */
+table td, table th {
+  padding: 30px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 300;
+}
+/* line 138, scss/components/_typography.scss */
+table tr:nth-child(even) td {
+  background: #f5f5f5;
+}
+/* line 141, scss/components/_typography.scss */
+table tr:nth-child(odd) td {
+  background: #ededed;
+}
+/* line 144, scss/components/_typography.scss */
+table tr:first-child th {
+  background: #855992;
+  color: #fff;
+}
+/* line 148, scss/components/_typography.scss */
+table tr th:first-child,
+table tr td:first-child {
+  text-align: left;
+  min-width: 38%;
+}
+
+/* line 155, scss/components/_typography.scss */
+.highlight, .page-aside {
+  background: #f9f9f9;
+}
+
+/* line 158, scss/components/_typography.scss */
+.highlight-box {
+  background: #f4f4f4;
+  padding: 50px 0;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+/* line 165, scss/components/_typography.scss */
+.bgimg-box {
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 0 40px;
+}
+
+/* line 2, scss/components/_carousel.scss */
+.carousel {
+  /*.carousel-controlls {
+  	position: absolute;
+  	z-index: 3;
+  	width: 100%;
+  	height: 60px;
+  	top: 5*$gutter;
+  	left: 0;
+  	overflow: hidden;
+  	.prev,
+  	.next {
+  		position: absolute;
+  		z-index: 3;
+  		display: block;
+  		width: 60px;
+  		height: 60px;
+  		top: 0;
+  		background: rgba(255,255,255,.5);
+  		border: 0;
+  		padding: 1.5*$gutter;
+  		.icon {
+  			fill: $primary-color;
+  			width: 30px;
+  			height: 30px;
+  		}
+  		&:hover .icon {
+  			fill: $secondary-color;
+  		}
+  	}
+  	.prev {
+  		left: 0px;
+  	}
+  	.next {
+  		right: 0px;
+  		.icon {
+  			transform: rotate(180deg);
+  		}
+  	}
+  }*/
+}
+/* line 3, scss/components/_carousel.scss */
+.carousel .carousel-content {
+  overflow: hidden;
+  z-index: 2;
+}
+/* line 7, scss/components/_carousel.scss */
+.carousel .carousel-inner {
+  width: 9999px;
+}
+/* line 16, scss/components/_carousel.scss */
+.carousel .carousel-pagination {
+  position: absolute;
+  width: 100%;
+  height: 12px;
+  bottom: 20px;
+  text-align: center;
+  z-index: 2;
+}
+/* line 24, scss/components/_carousel.scss */
+.carousel .carousel-pagination .nav-item {
+  display: inline-block;
+  margin: 0 6px;
+  border: 1px solid #2d5385;
+  padding: 2px;
+  width: 12px;
+  height: 12px;
+}
+/* line 33, scss/components/_carousel.scss */
+.carousel .carousel-pagination .nav-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+/* line 39, scss/components/_carousel.scss */
+.carousel .carousel-pagination .nav-link:hover, .carousel .carousel-pagination .nav-link.active {
+  background: #2d5385;
+}
+
+/* line 84, scss/components/_carousel.scss */
+.home-slider {
+  margin: 0 0 20px;
+  font-size: 24px;
+  line-height: 1.5;
+}
+/* line 88, scss/components/_carousel.scss */
+.home-slider .item {
+  height: 170px;
+  width: calc(100vw - 40px);
+  max-width: 1170px;
+}
+/* line 93, scss/components/_carousel.scss */
+.home-slider .item-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: auto 100%;
+}
+/* line 101, scss/components/_carousel.scss */
+.home-slider .item-content {
+  padding: 20px;
+  background: rgba(234, 237, 243, 0.45);
+  width: 100%;
+  height: 100%;
+}
+/* line 107, scss/components/_carousel.scss */
+.home-slider .item-title {
+  font-size: 2em;
+  line-height: normal;
+  color: #2d5385;
+  text-transform: uppercase;
+}
+/* line 114, scss/components/_carousel.scss */
+.home-slider .item-text {
+  color: #2d5385;
+}
+
+/* line 2, scss/components/_breadcrumbs.scss */
+.breadcrumbs {
+  margin: 15px 0;
+}
+/* line 4, scss/components/_breadcrumbs.scss */
+.breadcrumbs .bcs-link {
+  color: #855992;
+}
+/* line 6, scss/components/_breadcrumbs.scss */
+.breadcrumbs .bcs-link:after {
+  content: ' / ';
+  color: #515151;
+}
+
+/* line 5, scss/components/_dropdown.scss */
+.dropdown-value {
+  line-height: 28px;
+  vertical-align: middle;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transition: all .3s;
+          transition: all .3s;
+  padding: 0 16px 0 10px;
+  cursor: pointer;
+}
+
+/* line 14, scss/components/_dropdown.scss */
+.dropdown-list {
+  position: absolute;
+  top: 0;
+  width: 55px;
+  background: #fff;
+  z-index: 100;
+  -webkit-transform: scale(1, 0) translate(0, -100%);
+      -ms-transform: scale(1, 0) translate(0, -100%);
+          transform: scale(1, 0) translate(0, -100%);
+  opacity: 0;
+  -webkit-transition: all .3s;
+          transition: all .3s;
+  border: 1px solid #d7d7d7;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/* line 29, scss/components/_dropdown.scss */
+.dropdown-list .dropdown-item {
+  line-height: 28px;
+  vertical-align: middle;
+  display: block;
+  padding: 0 30px 0 10px;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+  cursor: pointer;
+}
+/* line 40, scss/components/_dropdown.scss */
+.dropdown-list .dropdown-item:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  width: 13px;
+  height: 1px;
+  background: #d7d7d7;
+}
+/* line 50, scss/components/_dropdown.scss */
+.dropdown-list .dropdown-item:last-of-type:after {
+  display: none;
+}
+/* line 53, scss/components/_dropdown.scss */
+.dropdown-list .dropdown-item:hover {
+  color: #855992;
+}
+/* line 57, scss/components/_dropdown.scss */
+.dropdown-list .dropdown-item.active {
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+      -ms-flex-order: 0;
+          order: 0;
+}
+
+/* line 61, scss/components/_dropdown.scss */
+.dropdown-arrow {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -10px;
+  z-index: 101;
+  cursor: pointer;
+}
+/* line 70, scss/components/_dropdown.scss */
+.dropdown-arrow .icon {
+  fill: #5d5d5d;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: -webkit-transform .2s;
+          transition: transform .2s;
+}
+
+/* line 77, scss/components/_dropdown.scss */
+.dropdown-box.open .dropdown-value {
+  -webkit-transform: translate(0, 10px);
+      -ms-transform: translate(0, 10px);
+          transform: translate(0, 10px);
+}
+/* line 80, scss/components/_dropdown.scss */
+.dropdown-box.open .dropdown-list {
+  -webkit-transform: scale(1) translate(0, 0);
+      -ms-transform: scale(1) translate(0, 0);
+          transform: scale(1) translate(0, 0);
+  opacity: 1;
+}
+/* line 84, scss/components/_dropdown.scss */
+.dropdown-box.open .dropdown-arrow .icon {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+/* line 2, scss/components/_pagination.scss */
+.pagination {
+  margin: 30px auto;
+}
+/* line 4, scss/components/_pagination.scss */
+.pagination .page-list {
+  text-align: center;
+}
+/* line 8, scss/components/_pagination.scss */
+.pagination .page-item {
+  display: inline-block;
+  margin: 0 3px;
+}
+/* line 12, scss/components/_pagination.scss */
+.pagination .page-link {
+  display: block;
+  width: 26px;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  background: #a46db5;
+  color: #fff;
+}
+/* line 20, scss/components/_pagination.scss */
+.pagination .page-link.active, .pagination .page-link:hover {
+  background: #855992;
+}
+
+/* line 2, scss/components/_card.scss */
+.card {
+  margin-bottom: 20px;
+}
+/* line 4, scss/components/_card.scss */
+.card .item-img {
+  display: block;
+  padding-top: 170px;
+}
+/* line 8, scss/components/_card.scss */
+.card .item-title {
+  padding: 20px 15px;
+  color: #fff;
+  background: #855992;
+}
+/* line 15, scss/components/_card.scss */
+.card.role-1 .item-title {
+  background: #559e12;
+}
+/* line 18, scss/components/_card.scss */
+.card.role-2 .item-title {
+  background: #da522c;
+}
+/* line 21, scss/components/_card.scss */
+.card.role-3 .item-title {
+  background: #2776ed;
+}
+
+/* line 26, scss/components/_card.scss */
+.news-item.card .item-title {
+  padding-bottom: 50px;
+}
+/* line 29, scss/components/_card.scss */
+.news-item.card .date {
+  color: #fff;
+}
+
+/* line 2, scss/components/_accordeon.scss */
+.accordeon {
+  margin: 20px 0;
+  overflow: hidden;
+}
+/* line 5, scss/components/_accordeon.scss */
+.accordeon .accordeon-header {
+  padding: 20px 15px;
+  padding-right: 30px;
+  background: #ececec;
+  min-height: 100px;
+  z-index: 2;
+}
+/* line 13, scss/components/_accordeon.scss */
+.accordeon .accordeon-header:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #b9b9b9;
+  -webkit-transition: all .3s ease;
+          transition: all .3s ease;
+}
+/* line 28, scss/components/_accordeon.scss */
+.accordeon .accordeon-content {
+  padding: 5px 15px 10px;
+  z-index: 1;
+  display: none;
+  overflow: hidden;
+}
+/* line 36, scss/components/_accordeon.scss */
+.accordeon.open .accordeon-header {
+  background: #dde7ff;
+}
+/* line 38, scss/components/_accordeon.scss */
+.accordeon.open .accordeon-header:after {
+  border-left-color: #855992;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+/* line 44, scss/components/_accordeon.scss */
+.accordeon ol, .accordeon ul {
+  margin: 0;
+}
+/* line 46, scss/components/_accordeon.scss */
+.accordeon ol li, .accordeon ul li {
+  margin: 20px 0 0;
+}
+/* line 52, scss/components/_accordeon.scss */
+.accordeon.type-2 .accordeon-header {
+  min-height: 60px;
+}
+/* line 54, scss/components/_accordeon.scss */
+.accordeon.type-2 .accordeon-header:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -7px;
+  right: 24px;
+  width: 1px;
+  height: 15px;
+  background: #515151;
+  opacity: 1;
+}
+/* line 66, scss/components/_accordeon.scss */
+.accordeon.type-2 .accordeon-header:after {
+  border: 0;
+  margin-top: 0px;
+  right: 17px;
+  width: 15px;
+  height: 1px;
+  background: #515151;
+}
+/* line 76, scss/components/_accordeon.scss */
+.accordeon.type-2.open .accordeon-header {
+  background: #ececec;
+}
+/* line 78, scss/components/_accordeon.scss */
+.accordeon.type-2.open .accordeon-header:before {
+  opacity: 0;
+}
+/* line 81, scss/components/_accordeon.scss */
+.accordeon.type-2.open .accordeon-header:after {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+}
+
+/* line 2, scss/components/_forms.scss */
+select {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ececec;
+  padding: 0 40px 0 15px;
+  line-height: 38px;
+  vertical-align: middle;
+  color: #a5a5a5;
+  background: url("images/select-arr.png") right center no-repeat;
+}
+
+/* line 15, scss/components/_forms.scss */
+label {
+  display: block;
+  color: #595959;
+}
+
+/* line 19, scss/components/_forms.scss */
+.required-mark {
+  color: #ef6363;
+}
+
+/* line 23, scss/components/_forms.scss */
+.inputtext,
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="url"] {
+  display: block;
+  width: 100%;
+  padding: 0 10px;
+  height: 40px;
+  line-height: 28px;
+  padding: 10px 0 0;
+  vertical-align: middle;
+  border: 0;
+  border-bottom: 1px solid #d7d7d7;
+  margin: 30px auto;
+  color: #949494;
+  background: transparent;
+}
+/* line 41, scss/components/_forms.scss */
+.inputtext:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="url"]:focus {
+  outline: none;
+  color: #515151;
+  border-color: #b5b5b5;
+}
+/* line 46, scss/components/_forms.scss */
+.inputtext.error,
+input[type="text"].error,
+input[type="tel"].error,
+input[type="email"].error,
+input[type="password"].error,
+input[type="url"].error {
+  color: #ef6363;
+}
+
+/* line 50, scss/components/_forms.scss */
+.textarea-field .lines {
+  width: 100%;
+  height: 41px;
+  border-top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
+  position: absolute;
+  top: 39px;
+  left: 0;
+  z-index: 1;
+}
+
+/* line 60, scss/components/_forms.scss */
+textarea.inputtext {
+  max-width: 100%;
+  height: 120px;
+  max-height: 120px;
+  line-height: 36px;
+  position: relative;
+  z-index: 2;
+}
+/* line 67, scss/components/_forms.scss */
+textarea.inputtext:focus + .lines {
+  border-color: #b5b5b5;
+}
+
+/* line 72, scss/components/_forms.scss */
+.checkbox-custom {
+  display: none;
+}
+/* line 74, scss/components/_forms.scss */
+.checkbox-custom + label {
+  padding-left: 50px;
+}
+/* line 76, scss/components/_forms.scss */
+.checkbox-custom + label:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 31px;
+  height: 31px;
+  border: 1px solid #ececec;
+}
+/* line 87, scss/components/_forms.scss */
+.checkbox-custom:checked + label:before {
+  background: url("images/tick.png") center no-repeat;
+}
+
+/* line 91, scss/components/_forms.scss */
+.bx-flexwrap .checkbox-custom + label {
+  padding-left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 97, scss/components/_forms.scss */
+.bx-flexwrap .checkbox-custom + label:before {
+  position: relative;
+  top: auto;
+  left: 0;
+  margin-right: 18px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
+/* line 106, scss/components/_forms.scss */
+.field-box {
+  margin: 10px auto 20px;
+}
+
+/* line 111, scss/components/_forms.scss */
+.captcha .captcha-img {
+  margin-bottom: 20px;
+}
+
+/* line 117, scss/components/_forms.scss */
+.bx-auth-services li {
+  display: inline-block;
+  min-width: 47%;
+  margin: 10px 0;
+  margin-right: 2%;
+}
+/* line 123, scss/components/_forms.scss */
+.bx-auth-services a {
+  color: #515151;
+}
+
+/* line 4, scss/components/_main-menu.scss */
+.main-menu .menu-item {
+  display: inline-block;
+  margin: 0 7px;
+}
+/* line 8, scss/components/_main-menu.scss */
+.main-menu .menu-link {
+  display: block;
+  line-height: 30px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent;
+}
+/* line 16, scss/components/_main-menu.scss */
+.main-menu .menu-link.active {
+  border-color: #855992;
+}
+
+/* line 2, scss/components/_scrollbar.scss */
+.scroll-box {
+  position: static;
+  width: 100%;
+}
+
+/* line 6, scss/components/_scrollbar.scss */
+.scroll-wrapper {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+/* line 13, scss/components/_scrollbar.scss */
+.scroll-wrapper.workarea-wrapper {
+  top: 95px;
+  bottom: 94px;
+}
+/* line 17, scss/components/_scrollbar.scss */
+.scroll-wrapper > div:first-of-type {
+  position: static;
+  width: 100%;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+/* line 24, scss/components/_scrollbar.scss */
+.iScrollVerticalScrollbar {
+  position: absolute;
+  z-index: 100;
+  width: 8px;
+  bottom: 7px;
+  top: 2px;
+  right: 1px;
+}
+/* line 31, scss/components/_scrollbar.scss */
+.iScrollVerticalScrollbar .iScrollIndicator {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+/* line 39, scss/components/_scrollbar.scss */
+.page-aside .iScrollVerticalScrollbar {
+  z-index: 9999;
+}
+/* line 41, scss/components/_scrollbar.scss */
+.page-aside .iScrollVerticalScrollbar .iScrollIndicator {
+  z-index: 9999;
+}
+
+/* line 2, scss/components/_header.scss */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  min-width: 1000px;
+  height: 95px;
+  padding-top: 17px;
+  padding-bottom: 24px;
+  background: #fff;
+  box-shadow: 0 2px 6px 0 rgba(133, 89, 146, 0.15);
+  color: #5d5d5d;
+}
+/* line 16, scss/components/_header.scss */
+.header .logo-box {
+  width: 100px;
+  height: 53px;
+}
+/* line 19, scss/components/_header.scss */
+.header .logo-box .icon {
+  fill: #855992;
+}
+/* line 23, scss/components/_header.scss */
+.header .content-box {
+  width: 950px;
+  max-width: calc(100% - 100px);
+}
+/* line 27, scss/components/_header.scss */
+.header .main-menu-box {
+  display: inline-block;
+  padding: 11px 0 9px;
+  margin: 0 65px;
+}
+@media screen and (max-width: 1090px) {
+  /* line 27, scss/components/_header.scss */
+  .header .main-menu-box {
+    margin: 0 6%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  /* line 27, scss/components/_header.scss */
+  .header .main-menu-box {
+    margin: 0 5%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  /* line 27, scss/components/_header.scss */
+  .header .main-menu-box {
+    margin: 0 3%;
+  }
+}
+/* line 41, scss/components/_header.scss */
+.header .phone-box {
+  display: inline-block;
+  line-height: 27px;
+  vertical-align: middle;
+  margin: 0 20px 0 0;
+}
+@media screen and (max-width: 1100px) {
+  /* line 41, scss/components/_header.scss */
+  .header .phone-box {
+    margin-right: 15px;
+  }
+}
+/* line 51, scss/components/_header.scss */
+.header .language-box {
+  display: inline-block;
+  border-left: 1px solid #d7d7d7;
+  width: 55px;
+  padding: 9px;
+  padding-right: 0;
+}
+@media screen and (max-width: 1100px) {
+  /* line 51, scss/components/_header.scss */
+  .header .language-box {
+    width: 50px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* line 2, scss/components/_header.scss */
+  .header {
+    position: absolute;
+  }
+}
+
+/* line 2, scss/components/_page-aside.scss */
+.dark-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 995;
+  background: #000;
+  opacity: 0;
+  -webkit-transform: translate(0, -100%);
+      -ms-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+  will-change: transform, opacity;
+  -webkit-transition: opacity .4s ease;
+          transition: opacity .4s ease;
+}
+/* line 14, scss/components/_page-aside.scss */
+.dark-bg.open {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 0.65;
+}
+
+/* line 19, scss/components/_page-aside.scss */
+.page-aside {
+  position: fixed;
+  top: 0;
+  right: -58%;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  will-change: transform;
+  -webkit-transition: -webkit-transform .5s ease;
+          transition: transform .5s ease;
+  overflow-y: auto;
+  width: 58%;
+  height: 100%;
+  max-width: 1128px;
+  z-index: 999
+  /*.page-aside-content {
+  	position: absolute;
+  	width: 100%;
+  	overflow: hidden;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  }*/
+}
+/* line 32, scss/components/_page-aside.scss */
+.page-aside.open {
+  -webkit-transform: translate(-100%, 0);
+      -ms-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+}
+/* line 35, scss/components/_page-aside.scss */
+.page-aside .btn-close {
+  position: absolute;
+  top: 70px;
+  right: 4.5%;
+  z-index: 1000;
+}
+/* line 49, scss/components/_page-aside.scss */
+.page-aside .page-aside-detail {
+  position: static;
+}
+/* line 55, scss/components/_page-aside.scss */
+.page-aside .page-aside-header {
+  background: #fff;
+  padding: 45px 12.4%;
+}
+/* line 58, scss/components/_page-aside.scss */
+.page-aside .page-aside-header .item-title {
+  margin: 15px 0;
+}
+/* line 62, scss/components/_page-aside.scss */
+.page-aside .page-aside-body {
+  padding: 15px 12.4% 50px;
+}
+/* line 65, scss/components/_page-aside.scss */
+.page-aside .page-aside-footer {
+  padding: 45px 12.4%;
+}
+/* line 67, scss/components/_page-aside.scss */
+.page-aside .page-aside-footer:before {
+  content: '';
+  display: block;
+  width: 900px;
+  max-width: 75%;
+  height: 1px;
+  background: #d7d7d7;
+  position: absolute;
+  top: 0;
+  left: 12.4%;
+}
+/* line 79, scss/components/_page-aside.scss */
+.page-aside .page-aside-map {
+  width: 100%;
+  height: 320px;
+}
+
+/* line 2, scss/components/_footer.scss */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 33px 30px 40px;
+  color: #fff;
+  background: #302839;
+}
+/* line 10, scss/components/_footer.scss */
+.footer .copy {
+  line-height: 21px;
+  vertical-align: middle;
+}
+
+/* line 2, scss/components/_home.scss */
+.start-box {
+  height: 815px;
+  padding: 270px 30px 85px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+/* line 9, scss/components/_home.scss */
+.start-box .start-title {
+  margin-bottom: 220px;
+  color: #fff;
+}
+/* line 13, scss/components/_home.scss */
+.start-box .start-icon {
+  display: block;
+  margin: 220px auto 0;
+  width: 44px;
+  height: 44px;
+}
+/* line 18, scss/components/_home.scss */
+.start-box .start-icon .icon {
+  fill: #fff;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+/* line 25, scss/components/_home.scss */
+.about-box {
+  padding: 60px 60px 90px;
+}
+
+/* line 29, scss/components/_home.scss */
+.home-page .about-box,
+.home-page .news-list {
+  background: #fff;
+}
+
+/* line 5, scss/components/_projects.scss */
+.project-item {
+  height: 430px;
+  padding: 115px 30px;
+  margin-bottom: 3px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: -webkit-filter .3s, filter .3s;
+          transition: filter .3s;
+}
+/* line 14, scss/components/_projects.scss */
+.project-item:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #e4e5ef;
+  opacity: 0.65;
+  -webkit-transition: opacity .3s;
+          transition: opacity .3s;
+}
+/* line 26, scss/components/_projects.scss */
+.project-item .item-title {
+  -webkit-transform: translate(0, 70px);
+      -ms-transform: translate(0, 70px);
+          transform: translate(0, 70px);
+  -webkit-transition: -webkit-transform .3s;
+          transition: transform .3s;
+}
+/* line 30, scss/components/_projects.scss */
+.project-item .item-anons {
+  opacity: 0;
+  margin: 30px 0 55px;
+  -webkit-transition: opacity .3s;
+          transition: opacity .3s;
+}
+/* line 35, scss/components/_projects.scss */
+.project-item .read-more {
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+          transition: opacity .3s;
+}
+/* line 41, scss/components/_projects.scss */
+.project-item:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transition: -webkit-filter .3s, filter .3s;
+          transition: filter .3s;
+}
+/* line 44, scss/components/_projects.scss */
+.project-item:hover:before {
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+          transition: opacity .3s;
+}
+/* line 48, scss/components/_projects.scss */
+.project-item:hover .item-anons,
+.project-item:hover .read-more {
+  opacity: 1;
+  -webkit-transition: opacity .3s;
+          transition: opacity .3s;
+}
+/* line 53, scss/components/_projects.scss */
+.project-item:hover .item-title {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transition: -webkit-transform .3s;
+          transition: transform .3s;
+}
+/* line 57, scss/components/_projects.scss */
+.project-item:hover .read-more:hover {
+  -webkit-transition: all .3s;
+          transition: all .3s;
+}
+
+/* line 3, scss/components/_404.scss */
+.page-404 .scroll-wrapper {
+  top: 0;
+  bottom: 0;
+}
+/* line 7, scss/components/_404.scss */
+.page-404 .workarea-wrapper {
+  background: url("images/content/404.png") center no-repeat;
+}
+/* line 10, scss/components/_404.scss */
+.page-404 .workarea {
+  padding: 70px 30px;
+}
+/* line 13, scss/components/_404.scss */
+.page-404 .logo-box {
+  display: block;
+  width: 260px;
+  height: 135px;
+  margin: 0 auto 80px;
+}
+/* line 18, scss/components/_404.scss */
+.page-404 .logo-box .logo {
+  fill: #fff;
+}
+/* line 22, scss/components/_404.scss */
+.page-404 .item-content {
+  margin-top: 80px;
+  color: #fff;
+}
+/* line 26, scss/components/_404.scss */
+.page-404 .item-title {
+  font-size: 272px;
+  line-height: 1em;
+  color: #fff;
+}
+/* line 31, scss/components/_404.scss */
+.page-404 .item-text {
+  font-size: 45px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  margin: 0 auto 40px;
+}
+/* line 37, scss/components/_404.scss */
+.page-404 .btn {
+  width: 250px;
+  height: 80px;
+  line-height: 78px;
+}
+
+/* line 3, scss/components/_courses.scss */
+.courses-box .item {
+  margin-bottom: 20px;
+}
+/* line 6, scss/components/_courses.scss */
+.courses-box .item-img {
+  display: block;
+  padding-top: 170px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 12, scss/components/_courses.scss */
+.courses-box .item-text {
+  padding: 1px 20px 1px 15px;
+  background: #565656;
+}
+/* line 17, scss/components/_courses.scss */
+.courses-box .item-text .tutorial-link,
+.courses-box .item-text .readmore-link {
+  color: #fff;
+}
+/* line 22, scss/components/_courses.scss */
+.courses-box .item-title {
+  vertical-align: middle;
+  padding: 0 15px;
+  color: #fff;
+}
+/* line 29, scss/components/_courses.scss */
+.courses-box .role-1 .item-title {
+  background: #559e12;
+}
+/* line 32, scss/components/_courses.scss */
+.courses-box .role-2 .item-title {
+  background: #da522c;
+}
+/* line 35, scss/components/_courses.scss */
+.courses-box .role-3 .item-title {
+  background: #2776ed;
+}
+
+/* line 3, scss/components/_links-box.scss */
+.links-box .item {
+  background-color: #f0f0f0;
+  text-transform: uppercase;
+  padding: 10px 5px 10px 55px;
+  border-bottom: 1px solid #8a8a8a;
+  background-position: left 13px center;
+  background-repeat: no-repeat;
+}
+/* line 10, scss/components/_links-box.scss */
+.links-box .item:last-of-type {
+  border: 0;
+}
+/* line 13, scss/components/_links-box.scss */
+.links-box .item .item-link {
+  color: #515151;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 40px;
+  font-size: 15px;
+}
+/* line 22, scss/components/_links-box.scss */
+.links-box.colored .item {
+  background-color: #a1a9f6;
+  border-bottom-color: #c0c5f9;
+}
+/* line 26, scss/components/_links-box.scss */
+.links-box.colored .item-link {
+  color: #fff;
+}
+
+/* line 2, scss/components/_news.scss */
+.news-list {
+  padding-top: 90px;
+  padding-bottom: 95px;
+}
+
+/* line 7, scss/components/_news.scss */
+.news-item:nth-of-type(odd) {
+  background: #f4f4f4;
+}
+/* line 10, scss/components/_news.scss */
+.news-item:last-of-type .container:after {
+  content: '';
+  display: block;
+  width: 410px;
+  height: 1px;
+  background: #d7d7d7;
+  position: absolute;
+  left: 30px;
+  bottom: 0;
+}
+/* line 20, scss/components/_news.scss */
+.news-item .item-link {
+  display: block;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  color: #686868;
+  position: relative;
+}
+/* line 28, scss/components/_news.scss */
+.news-item .item-date {
+  padding-bottom: 20px;
+}
+/* line 30, scss/components/_news.scss */
+.news-item .item-date:after {
+  content: '';
+  display: block;
+  width: 57px;
+  height: 1px;
+  background: #b89e95;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+/* line 41, scss/components/_news.scss */
+.news-item .item-title {
+  margin: 18px 0 22px;
+  text-transform: none;
+}
+/* line 45, scss/components/_news.scss */
+.news-item .item-anons {
+  width: 63.6%;
+}
+
+/* line 51, scss/components/_news.scss */
+.news-detail .item-date {
+  color: #919191;
+}
+
+/* line 3, scss/components/_contacts.scss */
+.contacts .contacts-box {
+  padding-right: 20px;
+}
+@media screen and (max-width: 1500px) and (min-width: 1250px) {
+  /* line 6, scss/components/_contacts.scss */
+  .contacts .contacts-box .xx-big, .contacts .contacts-box .courses-box .item-title, .courses-box .contacts .contacts-box .item-title {
+    font-size: 18px;
+    line-height: 2em;
+    margin-top: 2.3em;
+  }
+}
+/* line 13, scss/components/_contacts.scss */
+.contacts .feedback-box {
+  padding-left: 20px;
+}
+/* line 15, scss/components/_contacts.scss */
+.contacts .feedback-box .btn {
+  margin-top: 20px;
+}
+/* line 19, scss/components/_contacts.scss */
+.contacts .contacts-box,
+.contacts .feedback-box {
+  width: 50%;
+}
+@media screen and (max-width: 1250px) {
+  /* line 19, scss/components/_contacts.scss */
+  .contacts .contacts-box,
+  .contacts .feedback-box {
+    width: 100%;
+    padding: 0;
+  }
+}

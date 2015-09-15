@@ -1,0 +1,59 @@
+// shared styles
+.btn,
+input.btn,
+button.btn {
+	display: inline-block;
+	min-width: 160px;
+	padding: 0 20px;
+	font-size: 16px;
+	line-height: 58px;
+	height: 58px;
+	outline: 0;
+	vertical-align: middle;
+	border: 1px solid $btn-bg-color;
+	text-decoration: none;
+	color: $btn-color;
+	background-color: $btn-bg-color;
+	text-align: center;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: all .3s;
+	margin: 20px;
+	margin-left: 0;
+	// Gets rid of tap active state
+	-webkit-tap-highlight-color: transparent;
+	
+	// hover
+	&:hover {
+		background: $btn-hover-color;
+		border-color: $btn-hover-color;
+		color: $btn-color;
+		transition: all .3s;
+	}
+	
+	// transparent
+	&.transparent {
+		background: transparent;
+		border-color: #fff;
+		&:hover {
+			background: #fff;
+			color: #434a5b;
+		}
+	}
+	.center {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.btn-close {
+	width: 30px;
+	height: 30px;
+	transition: transform .3s ease;
+	.icon {
+		fill: $primary-color;
+	}
+	&:hover {
+		transform: rotate(90deg);
+	}
+}

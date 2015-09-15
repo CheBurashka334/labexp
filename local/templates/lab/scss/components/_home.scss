@@ -1,0 +1,33 @@
+// start-box
+.start-box {
+	height: 815px;
+	padding: 270px 30px 85px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	.start-title {
+		margin-bottom: 220px;
+		color: #fff;
+	}
+	.start-icon {
+		display: block;
+		margin: 220px auto 0;
+		width: 44px;
+		height: 44px;
+		.icon {
+			fill: #fff;
+			transform: rotate(90deg);
+		}
+	}
+}
+// about-box
+.about-box {
+	padding: 60px 60px 90px;
+}
+.home-page {
+	.about-box,
+	.news-list {
+		background: #fff;
+	}
+}

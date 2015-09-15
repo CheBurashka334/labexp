@@ -1,0 +1,11 @@
+// breadcrumbs
+.breadcrumbs {
+	margin: 1.5*$gutter 0;
+	.bcs-link {
+		color: $link-color;
+		&:after {
+			content: ' / ';
+			color: $base-text-color;
+		}
+	}
+}

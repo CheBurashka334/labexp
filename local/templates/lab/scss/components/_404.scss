@@ -1,0 +1,42 @@
+// 404
+.page-404 {
+	.scroll-wrapper {
+		top: 0;
+		bottom: 0;
+	}
+	.workarea-wrapper {
+		background: url('images/content/404.png') center no-repeat;
+	}
+	.workarea {
+		padding: 70px 30px;
+	}
+	.logo-box {
+		display: block;
+		width: 260px;
+		height: 135px;
+		margin: 0 auto 80px;
+		.logo {
+			fill: #fff;
+		}
+	}
+	.item-content {
+		margin-top: 80px;
+		color: #fff;
+	}
+	.item-title {
+		font-size: 272px;
+		line-height: 1em;
+		color: #fff;
+	}
+	.item-text {
+		font-size: 45px;
+		line-height: 1.5em;
+		text-transform: uppercase;
+		margin: 0 auto 40px;
+	}
+	.btn {
+		width: 250px;
+		height: 80px;
+		line-height: 78px;
+	}
+}

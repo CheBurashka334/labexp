@@ -1,0 +1,51 @@
+// colors
+$primary-color: #855992 !default;
+$primary-color-lighten: #a46db5 !default;
+$primary-color-darken: #302839 !default;
+$secondary-color: #c7213a !default;
+$base-text-color: #515151 !default;
+$light-text-color: #5d5d5d !default;
+$dark-text-color: #2d2d2d !default;
+$primary-bg: #054da1 !default;
+$base-grey: #565656;
+$light-grey: #ececec;
+$border-color: #d7d7d7;
+
+$btn-color: #f9f9f9 !default;
+$btn-bg-color: $primary-color !default;
+$btn-hover-color: $primary-color-lighten !default;
+
+$error-color: #ef6363 !default;
+$link-color: $primary-color !default;
+
+$role-1-color: #559e12;
+$role-2-color: #da522c;
+$role-3-color: #2776ed;
+
+$carousel-base-color: #2d5385;
+
+
+// dirs
+$fonts-dir: 'fonts/';
+$img-dir: 'images/';
+
+// fonts
+$rouble-font-path: 'fonts/pt-';
+
+// Media Query Ranges
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1210px !default;
+$small-screen-up: $small-screen + 1;
+$medium-screen-up: $medium-screen + 1;
+$large-screen-up: $large-screen + 1;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+
+// Grid system
+$cols: 12;
+$gutter: 10px;

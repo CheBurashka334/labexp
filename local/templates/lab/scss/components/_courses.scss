@@ -1,0 +1,38 @@
+// courses
+.courses-box {
+	.item {
+		margin-bottom: 2*$gutter;
+	}
+	.item-img {
+		display: block;
+		padding-top: 17*$gutter;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.item-text {
+		padding: 1px 2*$gutter 1px 1.5*$gutter;
+		background: $base-grey;
+		@extend .big;
+		@extend .thin;
+		.tutorial-link,
+		.readmore-link {
+			color: #fff;
+		}
+	}
+	.item-title {
+		@extend .thin;
+		@extend .xx-big;
+		vertical-align: middle;
+		padding: 0 1.5*$gutter;
+		color: #fff;
+	}
+	.role-1 .item-title {
+		background: $role-1-color;
+	}
+	.role-2 .item-title {
+		background: $role-2-color;
+	}
+	.role-3 .item-title {
+		background: $role-3-color;
+	}
+}
