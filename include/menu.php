@@ -1,9 +1,17 @@
-<div class="main-menu-box">
-	<ul class="main-menu nostyle">
-		<li class="menu-item"><a href="about.php" class="menu-link active">О компании</a></li>
-		<li class="menu-item"><a href="projects.php" class="menu-link">Проекты</a></li>
-		<li class="menu-item"><a href="news.php" class="menu-link">Новости</a></li>
-		<li class="menu-item"><a href="charity.php" class="menu-link">Благотворительность</a></li>
-		<li class="menu-item"><a href="contacts.php" class="menu-link get-page-content get-map">Контакты</a></li>
-	</ul>
-</div>
+<?$APPLICATION->IncludeComponent(
+    "bitrix:menu",
+    "top_menu",
+    Array(
+        "COMPONENT_TEMPLATE" => ".default",
+        "ROOT_MENU_TYPE" => "top",
+        "MENU_CACHE_TYPE" => "N",
+        "MENU_CACHE_TIME" => "3600",
+        "MENU_CACHE_USE_GROUPS" => "Y",
+        "MENU_CACHE_GET_VARS" => array(""),
+        "MAX_LEVEL" => "1",
+        "CHILD_MENU_TYPE" => "left",
+        "USE_EXT" => "N",
+        "DELAY" => "N",
+        "ALLOW_MULTI_SELECT" => "N"
+    )
+);?>

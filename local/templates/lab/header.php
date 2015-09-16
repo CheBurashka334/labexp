@@ -26,12 +26,15 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
         //use Asset::getInstance()->addJs($src, $additional)
         //use \Bitrix\Main\Page\Asset;
         //Asset::getInstance()->addJs("http://yastatic.net/jquery/2.1.1/jquery.min.js");
+
         use \Bitrix\Main\Page\Asset;
+        //D7 локализация
         Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/jquery-1.11.3.min.js");
         Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/jquery.jcarousel.min.js");
         Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/iscroll.js");
         Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/svg-lib.js");
         Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/script.js");
+        Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/fullajax.js");
 		//old
         /*
             $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery-1.11.3.min.js");
@@ -41,7 +44,6 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
             $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/script.js");
         */
 		?>
-		
 		
 		<title><?$APPLICATION->ShowTitle();?></title>
 		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />

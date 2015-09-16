@@ -30,12 +30,14 @@ $(document).ready(function(){
 	});
 	
 	$('.get-page-content').click(function(e){
-		var page = $(this).attr('href');
+		var page = $(this).attr('data-href');
 		var link = $(this);
-		$.get(page, function(data){
-			$('.page-aside-content').html(data);
+       // var result = ajlink(page);
+        var res = ajcontent(page,'<!--ajax-->','<!--endajax-->');
+		/*$.get(page, function(data){*/
+			//$('.page-aside-content').html(res);
 			$('.dark-bg, .page-aside').addClass('open');
-		});
+		//});
 		return false;
 	});
 	$('.dark-bg, .close-page-aside').click(function(){
