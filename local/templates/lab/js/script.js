@@ -31,7 +31,7 @@ $(document).ready(function(){
 	
 	$('.get-page-content').click(function(e){
 		var page = $(this).attr('data-href');
-		var link = $(this);
+		//var link = $(this);
        // var result = ajlink(page);
         var res = ajcontent(page,'<!--ajax-->','<!--endajax-->');
 		/*$.get(page, function(data){*/
@@ -42,6 +42,7 @@ $(document).ready(function(){
 	});
 	$('.dark-bg, .close-page-aside').click(function(){
 		$('.dark-bg, .page-aside').removeClass('open');
+        window.history.back();
 	});
 	
 	// dropdown init

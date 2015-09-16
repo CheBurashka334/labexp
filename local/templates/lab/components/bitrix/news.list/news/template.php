@@ -24,7 +24,7 @@ $this->setFrameMode(true);
     $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
     ?>
         <div class="news-item">
-            <a class="container container-small item-link get-page-content" href="<?echo $arItem["DETAIL_PAGE_URL"]?>">
+            <a class="container container-small item-link get-page-content" href="<?echo $arItem["DETAIL_PAGE_URL"]?>" data-href="<?echo $arItem["DETAIL_PAGE_URL"]?>?ajax=y">
                 <div class="item-date x-small">
                     <?echo EditData($arItem["DISPLAY_ACTIVE_FROM"])?>
                 </div>

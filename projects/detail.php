@@ -2,10 +2,15 @@
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle('Проекты');
 ?>
+<?
+    use \Bitrix\Iblock\ElementTable as EL;
+    use \Bitrix\Iblock\InheritedPropertyTable as SEO;
+?>
+<?if($_GET['ajax']=='y'):?>
 <!--ajax-->
 <?$APPLICATION->IncludeComponent(
 	"bitrix:news.detail",
-	"detail",
+	"detail-project",
 	Array(
 		"COMPONENT_TEMPLATE" => ".default",
 		"IBLOCK_TYPE" => "information",
@@ -47,7 +52,7 @@ $APPLICATION->SetTitle('Проекты');
 		"PAGER_TEMPLATE" => ".default",
 		"DISPLAY_TOP_PAGER" => "N",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
-		"PAGER_TITLE" => "РЎС‚СЂР°РЅРёС†Р°",
+		//"PAGER_TITLE" => "РЎС‚СЂР°РЅРёС†Р°",
 		"PAGER_SHOW_ALL" => "N",
 		"PAGER_BASE_LINK_ENABLE" => "N",
 		"SET_STATUS_404" => "N",
@@ -56,6 +61,39 @@ $APPLICATION->SetTitle('Проекты');
 	)
 );?>
 <!--endajax-->
+<?else:?>
+    <?
+        $parameters = array(
+            'select'=>array('ID'),
+            'filter'=>array('IBLOCK_ID'=>'2','CODE'=>$_REQUEST["ELEMENT_CODE"])
+        );
+        $EL = EL::getList($parameters)->fetchAll();
+        $id_element = $EL[0]['ID'];
+        $parameters = array(
+            'filter'=>array('IBLOCK_ID'=>'2','ENTITY_ID'=>$id_element)
+        );
+       $rows = SEO::getList($parameters)->fetchAll();
+       if(!empty($rows))
+       {
+           foreach($rows as $item)
+           {
+               switch ($item['CODE']) {
+                   case 'ELEMENT_META_TITLE':
+                       $APPLICATION->SetPageProperty("title", $item['TEMPLATE']);
+                       $APPLICATION->SetTitle($item['TEMPLATE']);
+                       break;
+               }
+           }
+       }
+    ?>
+    <?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."inc/projects_list.php"), false);?>
+    <script>
+        $(document).ready(function(){
+            var res = ajcontent(location.pathname+'?ajax=y','<!--ajax-->','<!--endajax-->');
+            $('.dark-bg, .page-aside').addClass('open');
+        })
+    </script>
+<?endif;?>
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');
 ?>

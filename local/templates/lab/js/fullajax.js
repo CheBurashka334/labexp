@@ -15,19 +15,27 @@ function ajlink(str)
 }
 function ajcontent(str,start,end){
 
-    $('.page-aside-content').html('<img src="/images/reload.png"/>');
+    $('.page-aside-content').html('<div class="preloader_wrp"><div class="preloader_it"><img src="/images/reload.png"/></div></div>');
     $.ajax({
         url: "http://"+document.domain+""+str,
-        type: "POST",
+        type: "GET",
         dataType: "html",
         success: function(data){
-           // var resultat =  data;
+           //content
             var res_1 = data.split(start);
             var result = res_1[1];
             result = result.split(end);
-            //$('.page-aside-content').html('<img src="/images/reload.png"/>');
+            //end content
+            //title
+            var title = data.split('<title>');
+            title = title[1];
+            title = title.split('</title>');
+            title = title[0];
+            //end title
             $('.page-aside-content').html(result[0]);
-            //return result[0];
+            $('title').text(title);
+            str = str.split('?');
+            window.history.pushState(null, title, str[0]);
         }
     });
 }

@@ -26,7 +26,7 @@ use \Bitrix\Main\Localization\Loc as LC;
             <div class="container container-small">
                 <div class="item-title large"><?echo $arItem["NAME"]?></div>
                 <div class="item-anons"><?echo $arItem["PREVIEW_TEXT"];?></div>
-                <a class="btn read-more get-page-content" href="<?echo $arItem["DETAIL_PAGE_URL"]?>" data-href="<?echo $arItem["DETAIL_PAGE_URL"]?>" <?/*onclick="ajlink('<?echo $arItem["DETAIL_PAGE_URL"]?>');"*/?>><?=LC::getMessage('NAME_BTN');?></a>
+                <a class="btn read-more get-page-content" href="<?echo $arItem["DETAIL_PAGE_URL"]?>" data-href="<?echo $arItem["DETAIL_PAGE_URL"]?>?ajax=y" <?/*onclick="ajlink('<?echo $arItem["DETAIL_PAGE_URL"]?>');"*/?>><?=LC::getMessage('NAME_BTN');?></a>
             </div>
         </div>
 
