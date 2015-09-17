@@ -13,28 +13,10 @@ $arUrlRewrite = array(
         "PATH" => "/news/detail.php",
     ),
     array(
-        "CONDITION" => "#^/events/([a-zA-Z0-9_-]+)(/)(?:\\\\?.*)?#",
-        "RULE" => "code=\$1",
+        "CONDITION" => "#^/charity/([a-zA-Z0-9_-]+)(/)(?:\\\\?.*)?#",
+        "RULE" => "ELEMENT_CODE=\$1",
         "ID" => "bitrix:news.detail",
-        "PATH" => "/events/detail.php",
-    ),
-    array(
-        "CONDITION" => "#^/out_city/([a-zA-Z0-9\\.\\-_]+)/#",
-        "RULE" => "",
-        "ID" => "bitrix:news.list",
-        "PATH" => "/out_city/list.php",
-    ),
-    array(
-        "CONDITION" => "#^/in_city/([a-zA-Z0-9\\.\\-_]+)/#",
-        "RULE" => "",
-        "ID" => "bitrix:news.list",
-        "PATH" => "/in_city/list.php",
-    ),
-    array(
-        "CONDITION" => "#^/([a-zA-Z0-9_-]+)(/)(?:\\\\?.*)?#",
-        "RULE" => "code=\$1",
-        "ID" => "bitrix:news.list",
-        "PATH" => "/tags/detail.php",
+        "PATH" => "/charity/detail.php",
     ),
 );
 

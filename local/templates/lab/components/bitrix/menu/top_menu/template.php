@@ -10,9 +10,13 @@
             continue;
         ?>
         <?if($arItem["SELECTED"]):?>
-            <li class="menu-item"><a href="<?=$arItem["LINK"]?>" class="menu-link active"><?=$arItem["TEXT"]?></a></li>
+            <li class="menu-item">
+                <a href="<?=$arItem["LINK"]?>" <?if($arItem['PARAMS']['ajax']=='y'):?>data-href="<?echo $arItem["LINK"]?>?ajax=y"<?endif;?> class="menu-link active <?if($arItem['PARAMS']['ajax']=='y'):?>get-page-content<?endif;?>"><?=$arItem["TEXT"]?></a>
+            </li>
          <?else:?>
-            <li class="menu-item"><a href="<?=$arItem["LINK"]?>" class="menu-link"><?=$arItem["TEXT"]?></a></li>
+            <li class="menu-item">
+                <a href="<?=$arItem["LINK"]?>" <?if($arItem['PARAMS']['ajax']=='y'):?>data-href="<?echo $arItem["LINK"]?>?ajax=y"<?endif;?> class="menu-link <?if($arItem['PARAMS']['ajax']=='y'):?>get-page-content<?endif;?>"><?=$arItem["TEXT"]?></a>
+            </li>
         <?endif?>
     <?endforeach?>
         </ul>

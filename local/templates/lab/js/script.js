@@ -1,19 +1,21 @@
+var pageScroll;
+var asideScroll;
 $(document).ready(function(){
-	
+
+
 	$('#svg-placeholder').html(svg);
-	
-	// scroll
-	var pageScroll = new IScroll('#scroll-page', {
-		mouseWheel: true,
-		scrollbars: true, 
-		scrollbars: 'custom'
-	});
-	var asideScroll = new IScroll('#scroll-aside', {
-		mouseWheel: true,
-		scrollbars: true, 
-		scrollbars: 'custom'
-	});
-	
+    // scroll
+    pageScroll = new IScroll('#scroll-page', {
+        mouseWheel: true,
+        scrollbars: true,
+        scrollbars: 'custom'
+    });
+    asideScroll = new IScroll('#scroll-aside', {
+        mouseWheel: true,
+        scrollbars: true,
+        scrollbars: 'custom'
+    });
+
 	// menu
 	$('.js-menu').click(function(){
 		var act = $(this).attr('data-action');
@@ -34,10 +36,9 @@ $(document).ready(function(){
 		//var link = $(this);
        // var result = ajlink(page);
         var res = ajcontent(page,'<!--ajax-->','<!--endajax-->');
+        $('.dark-bg, .page-aside').addClass('open');
 		/*$.get(page, function(data){*/
 			//$('.page-aside-content').html(res);
-			$('.dark-bg, .page-aside').addClass('open');
-		//});
 		return false;
 	});
 	$('.dark-bg, .close-page-aside').click(function(){
@@ -122,21 +123,6 @@ $(document).ready(function(){
 		
 });
 
-// yandex map
-// https://tech.yandex.ru/maps/doc/jsapi/2.1/quick-start/tasks/quick-start-docpage/
-var map, placemark;
-function init(){
-	map = new ymaps.Map('yamap',{
-		center: [55.79878245, 37.40041248],
-		zoom: 17
-	});
-	placemark = new ymaps.Placemark(map.getCenter(),{},{
-		iconLayout: 'default#image',
-		iconImageHref: 'images/icons-svg/pin56.svg',
-	});
-	map.geoObjects.add(placemark);
-	map.behaviors.disable('scrollZoom');
-}
 
 function position(fix) {
 	if(fix == 'fix'){
@@ -149,4 +135,14 @@ function position(fix) {
 		$('.page').css({/*'position': 'relative',*/ 'top': '0px'});
 		$(window).scrollTop(-pos);
 	}
+}
+
+function onCompliteAjax()
+{
+    setTimeout(function () {
+        asideScroll.refresh();
+    }, 0);
+    setTimeout(function () {
+        pageScroll.refresh();
+    }, 0);
 }

@@ -23,7 +23,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	<div class="scroll-box">
 		<button class="btn-close close-page-aside"><svg class="icon"><use xlink:href="#cross"/></svg></button>
 		<div class="scroll-wrapper" id="scroll-aside">
-			<div class="page-aside-content" style="width: 100%;    height: 100%;"></div>
+			<div class="page-aside-content"></div>
 		</div>
 	</div>
 </div>

@@ -4,7 +4,7 @@ $aMenuLinks = Array(
 		"О компании", 
 		"/about/", 
 		Array(), 
-		Array(), 
+		Array("ajax"=>'y'),
 		"" 
 	),
 	Array(
@@ -31,9 +31,9 @@ $aMenuLinks = Array(
 	Array(
 		"Контакты", 
 		"/contacts/", 
-		Array(), 
-		Array(), 
-		"" 
+		Array(),
+		Array("ajax"=>'y'),
+		""
 	)
 );
 ?>

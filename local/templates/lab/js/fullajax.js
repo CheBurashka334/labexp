@@ -36,6 +36,8 @@ function ajcontent(str,start,end){
             $('title').text(title);
             str = str.split('?');
             window.history.pushState(null, title, str[0]);
+            onCompliteAjax();
+            //});
         }
     });
 }
