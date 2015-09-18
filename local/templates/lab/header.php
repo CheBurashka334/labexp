@@ -35,6 +35,10 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
         Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/svg-lib.js");
         Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/script.js");
         Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/fullajax.js");
+
+        //Для работы ajax у формы неавторизованным пользователям AJAX_MODE=>Y
+        Asset::getInstance()->addJs("/bitrix/js/main/core/core.min.js");
+        Asset::getInstance()->addJs("/bitrix/js/main/core/core_ajax.min.js");
 		//old
         /*
             $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery-1.11.3.min.js");

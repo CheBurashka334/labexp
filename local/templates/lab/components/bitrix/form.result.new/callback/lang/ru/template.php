@@ -1,6 +1,6 @@
 <?
 $MESS ['FORM_REQUIRED_FIELDS'] = "Поля, обязательные для заполнения";
-$MESS ['FORM_APPLY'] = "Сделать запрос";
+$MESS ['FORM_APPLY_NEW'] = "Сделать запрос";
 $MESS ['FORM_ADD'] = "Добавить";
 $MESS ['FORM_ACCESS_DENIED'] = "Не хватает прав доступа к веб-форме.";
 $MESS ['FORM_DATA_SAVED1'] = "Спасибо!<br><br>Ваша заявка №";

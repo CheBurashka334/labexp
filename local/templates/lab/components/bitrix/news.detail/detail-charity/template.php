@@ -22,7 +22,7 @@ use \Bitrix\Main\Localization\Loc as LC;
             <?echo $arResult["DETAIL_TEXT"];?>
         </div>
         <div class="page-aside-footer">
-            <a href="/news/"><?=LC::getMessage('ALLNEWS');?></a>
+            <a href="/charity/"><?=LC::getMessage('ALLNEWS');?></a>
         </div>
     </div>
 

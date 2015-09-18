@@ -1,5 +1,5 @@
 <?
 $MESS["ALLPROJECTS"] = 'Все проекты';
 $MESS["MOVE"] = 'перейти';
-$MESS["ALLNEWS"] = 'Все новости';
+$MESS["ALLNEWS"] = 'Все благотворительности';
 ?>

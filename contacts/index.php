@@ -34,24 +34,14 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                         ),
                         "CACHE_TYPE" => "A",
                         "CACHE_TIME" => "3600",
-                        "LIST_URL" => "result_list.php",
-                        "EDIT_URL" => "result_edit.php",
+                        "LIST_URL" => "",
+                        "EDIT_URL" => "",
                         "SUCCESS_URL" => "",
                         "CHAIN_ITEM_TEXT" => "",
-                        "CHAIN_ITEM_LINK" => ""
+                        "CHAIN_ITEM_LINK" => "",
+                        "AJAX_MODE" => "Y",  // режим AJAX
                     )
                 );?>
-                <!--forms-->
-                <form>
-                    <input type="text" class="inputtext" placeholder="Имя" />
-                    <input type="text" class="inputtext" placeholder="Телефон или email" />
-                    <div class="textarea-field">
-                        <textarea class="inputtext" placeholder="Сообщение" rows="3"></textarea>
-                        <div class="lines"></div>
-                    </div>
-                    <input type="submit" class="btn" value="Сделать запрос"/>
-                </form>
-                <!--endforms-->
             </div>
         </div>
         <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=init" type="text/javascript"></script>

@@ -2514,6 +2514,8 @@ textarea.inputtext:focus + .lines {
   }
 }
 
+
+
 .preloader_wrp{
     overflow: hidden;
     position: fixed;
@@ -2530,7 +2532,9 @@ textarea.inputtext:focus + .lines {
     left: 45%;
     display: inline-block;
 }
-.preloader_it img{
+.preloader_it img,
+div[id^=wait_]
+{
     -webkit-animation-name: spin;
     -webkit-animation-duration: 1000ms;
     -webkit-animation-iteration-count: infinite;
@@ -2570,3 +2574,15 @@ textarea.inputtext:focus + .lines {
     }
 }
 
+/*Переопределям стиль загрузчика*/
+div[id^=wait_]{
+    background-image:url('/images/reload.png')!important;
+    background-size: 50px 50px!important;
+    background-color: rgba(0,0,0,0)!important;
+    border: 0px solid!important;
+    width: 50px!important;
+    height: 50px!important;
+    font-size:0px!important;
+    background-position:50% 50%!important;
+    padding:0px!important;
+}
