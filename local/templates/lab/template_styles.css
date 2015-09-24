@@ -1503,6 +1503,7 @@ table tr td:first-child {
           order: 1;
   cursor: pointer;
 }
+.dropdown-list .dropdown-item a{word-wrap: inherit;}
 /* line 40, scss/components/_dropdown.scss */
 .dropdown-list .dropdown-item:after {
   content: '';

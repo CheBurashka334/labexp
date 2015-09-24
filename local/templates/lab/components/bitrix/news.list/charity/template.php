@@ -26,7 +26,7 @@ $this->setFrameMode(true);
         <div class="news-item">
             <a class="container container-small item-link get-page-content" href="<?echo $arItem["DETAIL_PAGE_URL"]?>" data-href="<?echo $arItem["DETAIL_PAGE_URL"]?>?ajax=y">
                 <div class="item-date x-small">
-                    <?echo EditData($arItem["DISPLAY_ACTIVE_FROM"])?>
+                    <?echo EditData($arItem["DISPLAY_ACTIVE_FROM"],$GLOBALS['lang'])?>
                 </div>
                 <div class="item-title x-big"><?echo $arItem["NAME"]?></div>
                 <div class="item-anons"><?echo $arItem["PREVIEW_TEXT"];?></div>

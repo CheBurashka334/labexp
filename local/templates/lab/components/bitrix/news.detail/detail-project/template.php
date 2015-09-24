@@ -25,7 +25,7 @@ use \Bitrix\Main\Localization\Loc as LC;
         <p><a class="btn" target="_blank" href="<?=$arResult["DISPLAY_PROPERTIES"]['link']['VALUE']?>"><?=LC::getMessage('MOVE');?></a></p>
     </div>
     <div class="page-aside-footer">
-        <a href="/projects/"><?=LC::getMessage('ALLPROJECTS');?></a>
+        <a href="<?=SITE_DIR?>projects/"><?=LC::getMessage('ALLPROJECTS');?></a>
     </div>
 </div>
 

@@ -16,7 +16,7 @@ use \Bitrix\Main\Localization\Loc as LC;
     <div class="page-aside-detail news-detail">
         <div class="page-aside-header">
             <div class="item-title large"><?=$arResult["NAME"]?></div>
-            <div class="item-date small"><?echo EditData($arItem["DISPLAY_ACTIVE_FROM"])?></div>
+            <div class="item-date small"><?echo EditData($arItem["DISPLAY_ACTIVE_FROM"],$GLOBALS['lang'])?></div>
         </div>
         <div class="page-aside-body">
             <?echo $arResult["DETAIL_TEXT"];?>

@@ -78,7 +78,15 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 			<div class="header">
 				<div class="container clearfix">
 					<div class="logo-box left">
-						<a href="/" class="logo-link">
+                        <?
+                            $lang = '';
+                            $href = "/";
+
+                            if(CSite::InDir('/en/')){ $lang = 'en';$href = "/en/"; $GLOBALS['lang'] = 'en';}
+                            elseif(CSite::InDir('/zh/')){ $lang = 'zh';$href = "/zh/"; $GLOBALS['lang'] = 'zh';}
+                            else{$lang = 'ru';$href = "/"; $GLOBALS['lang'] = 'ru';}
+                        ?>
+						<a href="<?=$href;?>" class="logo-link">
 							<svg class="icon"><use xlink:href="#logo"/></svg>
 						</a>
                     </div>
@@ -103,9 +111,9 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 								<div class="dropdown-box">
 									<div class="dropdown-value"></div>
 									<ul class="dropdown-list">
-										<li class="dropdown-item active">ru</li>
-										<li class="dropdown-item">en</li>
-										<li class="dropdown-item">zh</li>
+										<li class="dropdown-item <?if($lang == 'ru'):?>active<?endif;?>"><a href="/">ru</a></li>
+										<li class="dropdown-item <?if($lang == 'en'):?>active<?endif;?>"><a href="/en/">en</a></li>
+										<li class="dropdown-item <?if($lang == 'zh'):?>active<?endif;?>">zh</li>
 									</ul>
 									<i class="dropdown-arrow"><svg class="icon"><use xlink:href="#arr"</svg></i>
 								</div>
